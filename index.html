@@ -3,10 +3,26 @@
 <head> 
     <meta charset="utf-8">
     <title>Tabernacle Down Yonder</title>
+  
     
+        
 <link rel="stylesheet" href="style.css"> 
+<link rel='stylesheet' href='form-style.css' type='text/css' />      
 </head>
+
+
+
 <body>
+
+    <script type="text/javascript">
+		//Get the current hours
+		var hours = new Date().getHours();
+		if(hours<12)
+		document.write("<em>❁ Good Morning!❁</em>");
+		else
+		document.write("<em>Salutations!</em>");
+	</script>    
+     
 <h1> Welcome To The Tabernacle Down Yonder! <br>
  ⚜⚜⚜⚜⚜⚜</h1>
 
@@ -23,10 +39,25 @@
      <a href=""><img src="https://i.ibb.co/DCHxkQC/succulent.jpg" alt="succulent" border="0"></a>
      <a href=""><img src="https://i.ibb.co/jRrDcF7/bee.jpg" alt="bee" border="0"></a>
      <a href=""><img src="https://i.ibb.co/28M5RHy/bud.jpg" alt="bud" border="0"></a>
-   
+  
+  
+    
+    
      
 
-   
-   
+     <body onload='document.form1.text1.focus()'>
+        <div class="mail">
+        <h2>Enter your email address below to subscribe to our FREE "Native Wildflowers" weekly newsletter! </h2>
+        <form name="form1" action="#"> 
+        <ul>
+        <li><input type='text' name='text1'/></li>
+        <li>&nbsp;</li>
+        <li class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/></li>
+        <li>&nbsp;</li>
+        </ul>
+        </form>
+        </div>
+        <script src="email-validation.js"></script>
+
+        <script src="main.js"></script>
     </body>
-</html>

@@ -1,18 +1,33 @@
 body {
-    background-color: powderblue;
-    text-align: center;
-  }
-  h1 {
-    color: indigo;
-    text-align: center
-  }
+  background-color: aliceblue;
+  text-align: center;
+  color-scheme: indigo; 
+}
 
-  h3 {
-    color: indigo;
-    text-align: center; 
 
-  }
-  p {
-    text-align: center;
-    color: indigo;
-  }
+
+
+h1 {
+  color: indigo;
+  background-color: aliceblue;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: .5in;
+  
+  
+
+}
+h3 {
+  color: indigo;
+  background-color: aliceblue;
+  border-top: aliceblue;
+  text-align: center; 
+
+  
+
+}
+p {
+  text-align: center;
+  color: indigo;
+  background-color: aliceblue;
+}

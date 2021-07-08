@@ -10,23 +10,28 @@
 <link rel='stylesheet' href='form-style.css' type='text/css' />      
 </head>
 
+<button onclick="myFunction()"><script type="text/javascript">
+    var hours = new Date().getHours();
+    if(hours<12)
+    document.write("<em>❁ Good Morning!❁</em>");
+    else
+    document.write("<em>Salutations!</em>");
+</script> 
+</button>
 
+<script>
+    function myFunction() {
+        var name = window.prompt("Please enter your name: ");
+alert("Welcome to The Tabernacle, " + name + "!");
+    }
+    </script>
 
-<body>
-
-    <script type="text/javascript">
-		//Get the current hours
-		var hours = new Date().getHours();
-		if(hours<12)
-		document.write("<em>❁ Good Morning!❁</em>");
-		else
-		document.write("<em>Salutations!</em>");
-	</script>    
+<body> 
      
 <h1> Welcome To The Tabernacle Down Yonder! <br>
  ⚜⚜⚜⚜⚜⚜</h1>
 
-<h3>  <i>An Amateur, Yet Charming Botanic Gallery- By Skye McCullough</i><br>
+<h3>  <i>A Botanic Gallery- By Skye McCullough</i><br>
      </h3> 
      <a href=""><img src="https://i.ibb.co/pbwG8w9/cherryblossom.jpg" alt="cherryblossom" border="0"></a>
      <a href=""><img src="https://i.ibb.co/kSSPGDB/prettyflower.jpg" alt="prettyflower" border="0"></a>
@@ -43,21 +48,19 @@
   
     
     
-     
-
-     <body onload='document.form1.text1.focus()'>
-        <div class="mail">
-        <h2>Enter your email address below to subscribe to our FREE "Native Wildflowers" weekly newsletter! </h2>
-        <form name="form1" action="#"> 
-        <ul>
-        <li><input type='text' name='text1'/></li>
-        <li>&nbsp;</li>
-        <li class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/></li>
-        <li>&nbsp;</li>
-        </ul>
-        </form>
-        </div>
-        <script src="email-validation.js"></script>
-
-        <script src="main.js"></script>
+    <body onload='document.form1.text1.focus()'>
+    <div class="mail">
+    <h2>Enter your email address below to subscribe to our FREE "Native Wildflowers" weekly newsletter!</h2>
+    <form name="form1" action="#">
+    <ul>
+    <li><input type='text' name='text1'/></li>
+    <li> </li>
+    <li class="Submit"><input type="submit" name="Submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/></li>  
+    <li> </li>
+    </ul>
+    </form>
+    </div>
+    <script src="email-validation.js"></script>
     </body>
+    </html>
+    

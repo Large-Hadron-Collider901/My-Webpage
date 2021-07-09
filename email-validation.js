@@ -1,20 +1,11 @@
-function ValidateEmail(inputText)
-{
-var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-while(mailformat==false){
-let mailFormat = prompt
-("Please enter your e-mail address");
-}
-if(inputText.value.match(mailformat))
-{
-alert("Sign up successful! Thanks for subscribing to our Native Wildflowers weekly newsletter!");
-document.form1.text1.focus();
-return true;
-}
-else
-{
-alert("You have entered an invalid email address, please try again!");
-document.form1.text1.focus();
-return false;
-}
-}
+function ValidateEmail(inputText) {
+    if (inputText.value.indexOf('@') > 0) return alert("Sign up successful! Thanks for subscribing to our Native Wildflowers weekly newsletter!");
+    let valid = false;
+    while (valid == false) {
+       let retryEmail = prompt("Oops! Invalid entry. Please enter a valid e-mail address.");
+       if (retryEmail.indexOf('@') > 0) {
+     alert("Sign up successful! Thanks for subscribing to our Native Wildflowers weekly newsletter!");
+     valid = true;
+        }
+      }
+    }
